@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.guaji_zhanguoce.CSharp", "UnityVS.guaji_zhanguoce.CSharp.csproj", "{949AEFEC-9F33-0E1F-9F70-75AAE37E9BF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.guaji_zhanguoce.CSharp.Editor", "UnityVS.guaji_zhanguoce.CSharp.Editor.csproj", "{6133430E-F7C5-E42A-CF58-8DF59B3CFECC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{949AEFEC-9F33-0E1F-9F70-75AAE37E9BF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{949AEFEC-9F33-0E1F-9F70-75AAE37E9BF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{949AEFEC-9F33-0E1F-9F70-75AAE37E9BF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{949AEFEC-9F33-0E1F-9F70-75AAE37E9BF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6133430E-F7C5-E42A-CF58-8DF59B3CFECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6133430E-F7C5-E42A-CF58-8DF59B3CFECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6133430E-F7C5-E42A-CF58-8DF59B3CFECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6133430E-F7C5-E42A-CF58-8DF59B3CFECC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
