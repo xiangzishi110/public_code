@@ -1,0 +1,45 @@
+resPath:相对路径不带后缀名,如:Prefab/UI/Arena/ArenaUI。
+resType:资源类型。
+resManageType:加载模式,Resources Or AssetBundel。
+suffix：文件后缀名，文件格式
+resName:文件名称。
+代码开发时，Resources和AssetBundle能随时即时切换。key 传递的是 resPath,resType
+
+补充：
+ 1，ResouceConfig，资源配置文件:
+	包含 resName, resPath，resType，resManageType，suffix
+ 
+ 2, ****_prefab.xml，AB引用其它资源配置xml:
+        包含 resName, resPath，resType，resManageType 无默认为assetBundle，suffix 无默认资源格式 assetbundle 或 bytes，只能二选一
+
+资源缓存设计
+          key : 
+            Resources模式是 resPath,例如:Prefab/UI/Arena/ArenaUI
+            AssetBundel模型是 resPath +“_”+suffix，例如:Prefab/UI/Arena/ArenaUI_prefab
+
+            下载路径:
+	       Resources模式就是 resPath
+               //单独模块
+               StreamingAssets/Config/ResourceConfig.unity3d
+               或者是 StreamingAssets/Config/ResourceConfig_unity3d.unity3d
+              
+               默认文件类型,二选一
+               StreamingAssets/Config/ResourceConfig_xml.assetbundle
+               StreamingAssets/Config/ResourceConfig_xml.bytes
+	       StreamingAssets/Texture/Equip/icon_png.assetbundle
+	       StreamingAssets/Texture/Equip/icon_png.bytes
+               suffix 指定文件类型 xml
+               StreamingAssets/Config/ResourceConfig.xml
+	
+判断是否资源缓存都根据 resPath+resType
+
+获取资源缓存都根据 resPath+resType
+
+添加资源缓存时：
+ Resources模式
+ Dictionary<string, IRESCache> resCache.Add(resPath,IRESCache);
+ AssetBundel模型    
+ Dictionary<string, IRESCache> resCache.Add(resPath+"_"+resType,IRESCache);
+
+
+
