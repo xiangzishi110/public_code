@@ -55,6 +55,8 @@ public class AppStarter : MonoBehaviour
         //{
             //update.InitExecution(ExeRun);
         //}
+
+        ExeRun(false);
     }
 
     void ExeRun(bool isbool)
@@ -66,7 +68,7 @@ public class AppStarter : MonoBehaviour
         }
         else
         {
-           //gameObject.AddComponent<GameInitialize>();
+           gameObject.AddComponent<GameInitialize>();
         }
     }
     IEnumerator Load()
