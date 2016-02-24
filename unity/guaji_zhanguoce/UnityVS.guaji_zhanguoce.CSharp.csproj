@@ -384,9 +384,22 @@
     <Compile Include="Assets\Script\Tools\Data\TxtTools.cs" />
     <Compile Include="Assets\Script\Tools\Others\MemoryTool.cs" />
     <Compile Include="Assets\Script\Tools\Others\ReflectionHelper.cs" />
+    <Compile Include="Assets\Script\Tools\Others\SendEventCollider.cs" />
     <Compile Include="Assets\Script\Tools\UI\LinkNetWorkTishiUI.cs" />
     <Compile Include="Assets\Script\Tools\UI\UIManager.cs" />
     <Compile Include="Assets\ScriptsBuildIn\AppStarter.cs" />
+    <Compile Include="Assets\ScriptsBuildIn\OnlineUpdate\ResOnlineUpdate.cs" />
+    <Compile Include="Assets\ScriptsBuildIn\OnlineUpdate\UI\ResOnlineUpdataUI.cs" />
+    <Compile Include="Assets\ScriptsBuildIn\OnlineUpdate\UI\UITipMessage.cs" />
+    <Compile Include="Assets\ScriptsBuildIn\OnlineUpdate\data\ResOnlineUpdateModel.cs" />
+    <Compile Include="Assets\ScriptsBuildIn\OnlineUpdate\data\ResUpdateInfo.cs" />
+    <Compile Include="Assets\ScriptsBuildIn\OnlineUpdate\data\ResVersionModel.cs" />
+    <Compile Include="Assets\ScriptsBuildIn\OnlineUpdate\data\VersionModel.cs" />
+    <Compile Include="Assets\ScriptsBuildIn\OnlineUpdate\data\VersionSavedData.cs" />
+    <Compile Include="Assets\ScriptsBuildIn\OnlineUpdate\utils\EnDeTool.cs" />
+    <Compile Include="Assets\ScriptsBuildIn\OnlineUpdate\utils\HttpUtils.cs" />
+    <Compile Include="Assets\ScriptsBuildIn\OnlineUpdate\utils\ResUpdateUtils.cs" />
+    <Compile Include="Assets\ScriptsBuildIn\OnlineUpdate\utils\SDKHelper.cs" />
     <Compile Include="Assets\ScriptsBuildIn\Utils\CameraLookAt.cs" />
     <Compile Include="Assets\ScriptsBuildIn\Utils\DontDestroy.cs" />
     <Compile Include="Assets\ScriptsBuildIn\Utils\FileLoadPath.cs" />
@@ -434,6 +447,8 @@
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
     <None Include="Assets\Script\Libs\protobuf-net\Web\TODO.txt" />
     <None Include="Assets\Script\RES\RESExplain.txt" />
+    <None Include="Assets\StreamingAssets\Version\android\code.txt" />
+    <None Include="Assets\StreamingAssets\Version\android\version.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>

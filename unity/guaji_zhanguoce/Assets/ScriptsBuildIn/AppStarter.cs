@@ -50,12 +50,11 @@ public class AppStarter : MonoBehaviour
     }
     public void startUpdate()
     {
-       // ResOnlineUpdate update = GetComponent<ResOnlineUpdate>();
-        //if (update)
-        //{
-            //update.InitExecution(ExeRun);
-        //}
-
+       ResOnlineUpdate update = GetComponent<ResOnlineUpdate>();
+       if (update)
+        {
+            update.InitExecution(ExeRun);
+        }
         ExeRun(false);
     }
 
@@ -68,7 +67,7 @@ public class AppStarter : MonoBehaviour
         }
         else
         {
-           gameObject.AddComponent<GameInitialize>();
+//           gameObject.AddComponent<GameInitialize>();
         }
     }
     IEnumerator Load()
